@@ -10,4 +10,10 @@ tokio = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 thiserror = { workspace = true }
+anyhow = { workspace = true }
 tracing = { workspace = true }
+gstreamer        = { workspace = true }
+gstreamer-video  = { workspace = true }
+gstreamer-webrtc = { workspace = true }
+gstreamer-sdp    = { workspace = true }
+gstreamer-rtp    = { workspace = true }

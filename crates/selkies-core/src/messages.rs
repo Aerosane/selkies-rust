@@ -41,6 +41,18 @@ pub enum ServerMessage {
         mem_total: u64,
         mem_used: u64,
     },
+
+    #[serde(rename = "haptic")]
+    Haptic {
+        /// Gamepad slot (0-3).
+        slot: u8,
+        /// High-frequency motor (right / weak), 0.0–1.0.
+        weak_magnitude: f64,
+        /// Low-frequency motor (left / strong), 0.0–1.0.
+        strong_magnitude: f64,
+        /// Duration in milliseconds.
+        duration_ms: u32,
+    },
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

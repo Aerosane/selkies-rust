@@ -37,3 +37,13 @@ clap = { version = "4", features = ["derive"] }
 
 # Time
 chrono = { version = "0.4", features = ["serde"] }
+
+# Linux kernel interfaces (uinput, ioctl, epoll)
+libc = "0.2"
+
+# GStreamer (1.28 / gstreamer-rs 0.23)
+gstreamer       = { version = "0.23", features = ["v1_28"] }
+gstreamer-video = { version = "0.23", features = ["v1_28"] }
+gstreamer-webrtc = { version = "0.23" }
+gstreamer-sdp   = { version = "0.23" }
+gstreamer-rtp   = { version = "0.23" }

@@ -10,8 +10,9 @@
 //! - InputInjector trait (X11 implementation deferred to when x11rb is added)
 //!
 // TODO(port): X11 mouse/keyboard injection (needs x11rb crate)
-// TODO(port): gamepad.py SelkiesGamepad (uinput device creation)
 // TODO(port): clipboard read/write (xclip subprocess or x11rb selections)
+
+pub mod gamepad;
 
 /// Mouse action constants matching browser-side enum.
 pub mod mouse {
