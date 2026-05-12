@@ -1,0 +1,12 @@
+[package]
+name = "selkies-input"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+selkies-core = { path = "../selkies-core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+base64 = { workspace = true }

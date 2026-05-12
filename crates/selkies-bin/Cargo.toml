@@ -1,0 +1,16 @@
+[package]
+name = "selkies-bin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+selkies-core = { path = "../selkies-core" }
+selkies-signaling = { path = "../selkies-signaling" }
+selkies-pipeline = { path = "../selkies-pipeline" }
+selkies-input = { path = "../selkies-input" }
+selkies-stats = { path = "../selkies-stats" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
