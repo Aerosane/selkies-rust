@@ -7,10 +7,13 @@ edition = "2021"
 selkies-core = { path = "../selkies-core" }
 tokio = { workspace = true }
 tokio-tungstenite = { workspace = true }
+futures-util = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 thiserror = { workspace = true }
 tracing = { workspace = true }
 base64 = { workspace = true }
-hmac = { workspace = true }
-sha1 = { workspace = true }
+http = "1"
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util"] }

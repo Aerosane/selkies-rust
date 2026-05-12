@@ -67,7 +67,6 @@ pub fn load_recording<P: AsRef<Path>>(path: P) -> Result<Vec<OracleEvent>, Oracl
 #[cfg(test)]
 mod tests {
     use super::*;
-    use std::fs;
     use tempfile::NamedTempFile;
 
     #[test]
